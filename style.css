@@ -1,0 +1,8 @@
+#pre-loader {
+    background: rgb(185, 185, 185) url(images/Echad-Logo-GIF.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
