@@ -9,6 +9,9 @@ $(document).ready(() => {
     });
    
 });
-
+$(".carousel").flickity({
+    wrapAround: true,
+    pageDots: false
+});
 
 
