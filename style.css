@@ -692,20 +692,7 @@ section {
 }
 
 
-
-@media only screen and (max-width: 1020px) {
-
-
-  #navBar .navTop span {
-display: none;
-
-
-  }
-
-  #navBar .navBottom ul li a {
-    font-size: 14px;
-  }
-}
+/*********** MEDEIA QUARY************/
 
 
 @media only screen and (min-width: 1200px) {
@@ -726,4 +713,27 @@ display: none;
     margin-left: 140px;
     
 }
+
+#navBar .navBottom ul li a {
+  font-size: 18px;
 }
+}
+
+
+
+
+@media only screen and (max-width: 1020px) {
+
+
+  #navBar .navTop span {
+display: none;
+
+
+  }
+
+  #navBar .navBottom ul li a {
+    font-size: 14px;
+  }
+}
+
+
