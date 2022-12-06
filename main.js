@@ -2,7 +2,7 @@
 var preLoader = document.getElementById("pre-loader");
 window.onload =()=>{
     setTimeout(function(){
-        preLoader.style.opacity ='0';
+        preLoader.style.display ='none';
  
 }, 2000);
 }
