@@ -34,14 +34,16 @@ const menu = document.getElementById('mobileNavBar');
 
 
 menuBtn.addEventListener('click', () => {
-    menu.style.display='flex';
-    closeBtn.style.display="flex";
+    menu.style.display = 'flex';
+    menuBtn.style.display = 'none';
+    closeBtn.style.display = "flex";
 
 });
 
 closeBtn.addEventListener('click', () => {
-    menu.style.display='none';
-    menuBtn.style.display="flex";
+    menu.style.display = 'none';
+    closeBtn.style.display = "none";
+    menuBtn.style.display = "flex";
 
 });
 

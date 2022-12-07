@@ -1,25 +1,32 @@
 :root {
   --babyBlue: #89cff0;
-  --power: #ff0080d2;
+  --power: #ffc400;
   --white: white;
   --darkGreen: rgb(0, 129, 32);
-  --lightGreen: rgb(36, 167, 69);
+  --lightGreen: rgb(0, 150, 37);
   --width: 84%;
   --mobileWidth: 94%;
   --starYellow: #fcae1d;
   --dustyRose: #9E606F;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 button {
   color: var(--white);
   background-color: var(--darkGreen);
   cursor: pointer;
   transition: all 200ms ease;
   border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 button:hover {
   color: var(--white);
   background-color: var(--lightGreen);
   cursor: pointer;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 ul {
@@ -79,6 +86,7 @@ section {
 }
 
 
+
 #navBar .navTop {
   display: flex;
   justify-content: space-between;
@@ -101,7 +109,7 @@ section {
 #navBar .navTop h2 {
   margin-top: 0;
   margin-bottom: 0;
-  color: black;
+  color: var(--dustyRose);
   line-height: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -121,8 +129,7 @@ section {
   line-height: 20px;
 }
 #navBar .navTop ul {
-margin-right: auto;
-  nav-left: auto;
+  margin-right: auto;
 
 
 }
@@ -158,7 +165,7 @@ margin-right: auto;
 
 }
 
-#navBar .fa-magnifying-glass {
+#navBar .tpsearchicon {
   transition: all 200ms ease;
   color: var(--white);
   font-size: 20px;
@@ -167,7 +174,7 @@ margin-right: auto;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-#navBar .fa-magnifying-glass:hover {
+#navBar .tpsearchicon:hover {
   background-color: var(--dustyRose);
   color: var(--white);
   border: 1px solid var(--dustyRose);
@@ -176,10 +183,14 @@ margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-
-
+ 
 }
+
+#navBar .btmsearch {
+
+  display: none;
+}
+
 
 #navBar .navBottom ul {
   display: flex;
@@ -278,7 +289,6 @@ margin-right: auto;
 }
 #slideShow .content .buyButton {
   font-size: 22px;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
 }
@@ -304,8 +314,9 @@ margin-right: auto;
   height: 60px;
   border-radius: 5px;
   font-size: 22px;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+
 
 /************* VIDEO ****************/
 
@@ -494,8 +505,8 @@ margin-right: auto;
   position: absolute;
   top: 0;
   bottom: 0;
-  color: var(--white);
-  background: rgba(0, 0, 0, 0.5);
+  color: var(--power);
+  background: rgba(0, 0, 0, 0.6);
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -508,13 +519,19 @@ margin-right: auto;
   opacity: 1;
   
 }
+#featureProductBox .overlay:hover img {
+  scale:1.2;
+}
 
 #featureProductBox .mainContainer img {
   width: 100%;
   height: auto;
 }
+
+
+
 #featureProductBox .productBoxText h1 {
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--power);
 }
 
 #featureProductBox .productBoxText p {
@@ -664,6 +681,7 @@ margin-right: auto;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   outline: none;
+  min-width: 120px;
 
 }
 #newsLetter .signup {
@@ -671,6 +689,7 @@ margin-right: auto;
   border-bottom-right-radius: 5px;
   white-space: nowrap;
   width: 30%;
+  min-width: 80px;
  
 }
 
@@ -720,8 +739,7 @@ margin-right: auto;
 }
 
 #footer .f2 img {
-  width: 160px;
-  border-radius: 10px;
+  width: 180px;
 }
 
 
@@ -823,16 +841,85 @@ display: none;
 
 @media only screen and (max-width: 780px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: var(--mobileWidth);
+  }
 
 
-#navBar .search {
-    float:left;
-    margin: 0;
-}
+  section {
+    margin-top: 60px;
+  }
+
+  h1{
+    font-size: 20px;
+
+  }
+  h2{
+    font-size: 18px;
+    
+  }
+  h3{
+    font-size: 18px;
+    
+  }
+  h4{
+    font-size: 16px;
+    
+  }
+
+  p {
+    font-size: 14px;
+  }
+  
+  #navBar .search {
+  display: none;
+  
+  }
+
+  #navBar .btmsearch {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: fixed;
+    top: 75px;
+    right: 10px;
+  }
+  #navBar .btmsearch input {
+    border: 1px solid var(--white);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: all 100ms ease;
+    outline: none;
+    min-width: 40px;
+    width: 80%;
+  
+  }
+  
+  #navBar .btmsearchicon {
+    transition: all 200ms ease;
+    color: var(--white);
+    font-size: 20px;
+    padding: 4px 10px;
+    border: 1px solid var(--white);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  #navBar .btmsearchicon:hover {
+    background-color: var(--dustyRose);
+    color: var(--white);
+    border: 1px solid var(--dustyRose);
+  }
 
 #navBar .navTop h2 {
   font-size: 20px;
+  text-align: left;
+  line-height: 20px;
 }
+
 
 #navBar .navBottom ul {
   display: flex;
@@ -847,7 +934,7 @@ display: none;
   background-color: #89cff0;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
   align-items: flex-start;
-  padding-top: 100px;
+  padding-top: 120px;
   padding-left: 20px;
   transition: all 100ms ease;
   display: none;
@@ -864,6 +951,7 @@ display: none;
   text-align: center;
   cursor: pointer;
   transition: all 200ms ease;
+  margin-left: 20px;
 }
 #navBar .mobileMenuButton:hover {
   color: var(--lightGreen);
@@ -888,9 +976,6 @@ display: none;
 
 
 
-
-
-
 #navBar .navBottom ul li {
   margin-bottom: 10px;
   
@@ -901,6 +986,251 @@ display: none;
     
     
   }
+  #slideShow .heroContent h2 {
+    font-size: 48px;
+    line-height: 48px;
+    margin: auto;
+    max-width: 50vw;
+}
+  #slideShow .heroContent h2 span {
+    font-size: 48px;
+    line-height: 48px;
+    margin: auto;
+}
 
+  #slideShow .content .buyButton {
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 14px;
+}
+
+#cta .container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  max-width: 100%;
+}
+
+#cta .container .buyButton {
+ font-size: 16px;
+ height: 40px;
+}
+.productBox {
+  
+  min-width: 180px;
+  
+}
+
+#featureProductBox .productBoxText h1 {
+  font-size: 16px;
+}
+
+#featureProductBox .productBoxText p {
+  line-height: 12px;
+  font-size: 12px;
+}
+
+#productSlideShow .carousel-cell {
+  padding: 0 2px;
+}
+
+#newsLetter h4 {
+  font-size: 20px;
+}
+
+#newsLetter p {
+  margin-bottom: 10px;
+}
+
+#newsLetter .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 75vw;
+}
+
+
+#newsLetter input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    min-width: 120px;
+}
+h3 {
+  font-size: 14px;
+}
+
+#footer li a {
+  font-size: 14px;
+}
 
 }
+
+#navBar .navTop h2 {
+margin-left: 20px;
+}
+
+#video {
+  margin-top: 20px;
+}
+
+
+#footer .f2 img {
+  width: 80%;
+}
+
+/****************** 580 **********************/
+
+
+
+
+@media only screen and (max-width: 580px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  
+
+
+  section {
+    margin-top: 40px;
+  }
+
+  h1{
+    font-size: 18px;
+    line-height: 18px;
+
+  }
+  h2{
+    font-size: 16px;
+    line-height: 16px;
+    
+  }
+  h3{
+    font-size: 14px;
+    line-height: 14px;
+    
+    
+  }
+  h4{
+    font-size: 13px;
+    
+    line-height: 13px;
+    
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 12px;
+
+  }
+
+
+
+
+
+
+
+  #slideShow .heroContent h2 {
+    font-size: 32px;
+    line-height: 32px;
+    
+  margin-top: -40px;
+    
+}
+#slideShow .heroContent h2 span {
+  font-size: 32px;
+  line-height: 32px;
+
+  
+}
+
+
+#slideShow .heroContent {
+  margin-left: 30px;
+  
+}
+
+#cta {
+  display: none;
+}
+
+
+#footer .f1 p {
+  line-height: 12px;
+}
+
+
+#footer li a {
+  font-size: 12px;
+}
+
+#featureProductBox .productBoxText p {
+ display: none;
+}
+
+#featureProductBox .productBoxText h1 {
+  border-bottom: none;
+}
+.productBox span {
+font-size: 12px;
+
+}
+
+  }
+
+
+
+ @media only screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+
+
+
+  #slideShow .content .buyButton {
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 3px 4px;
+}
+
+
+  #footer .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+
+#footer .f1 {
+  width: 80%;
+}
+#footer .f2, .f3 {
+  width: 80%;
+}
+
+#navBar .navTop h2 {
+  margin-left: 16px;
+}
+#slideShow .heroContent h2,#slideShow .heroContent h2 span {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+#navBar .navTop ul {
+  margin-right: auto 4px;
+}
+
+ul {
+  margin: 4px auto;
+}
+
+ }
