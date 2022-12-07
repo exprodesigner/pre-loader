@@ -1217,6 +1217,10 @@ font-size: 12px;
   width: 80%;
 }
 
+#footer .f2 img {
+  width: 50%;
+}
+
 #navBar .navTop h2 {
   margin-left: 16px;
 }
