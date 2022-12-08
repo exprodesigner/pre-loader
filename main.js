@@ -4,7 +4,7 @@ window.onload =()=>{
     setTimeout(function(){
         preLoader.style.display ='none';
  
-}, 2000);
+}, 1500);
 }
 
 
@@ -49,3 +49,24 @@ closeBtn.addEventListener('click', () => {
 
 
 
+
+const paymentBuyBtn = document.getElementById("buyButton");
+const paymentCloseBtn = document.getElementById("paymentCloseButton");
+const paymentMenu = document.getElementById("paymentHeader");
+
+
+paymentBuyBtn.addEventListener('click', () => {
+    paymentMenu.style.display = 'flex';
+    paymentBuyBtn.style.display = 'none';
+    paymentCloseBtn.style.display = "block";
+
+});
+
+
+
+paymentCloseBtn.addEventListener('click', () => {
+    paymentMenu.style.display = 'none';
+    paymentCloseBtn.style.display = "none";
+    paymentBuyBtn.style.display = "block";
+
+});
