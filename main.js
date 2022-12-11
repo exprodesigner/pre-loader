@@ -4,7 +4,7 @@ window.onload =()=>{
     setTimeout(function(){
         preLoader.style.display ='none';
  
-}, 1500);
+}, 00);
 }
 
 
@@ -25,7 +25,6 @@ $(".carousel").flickity({
     wrapAround: true,
     pageDots: false
 });
-
 
 
 const menuBtn = document.getElementById('mobileMenuButton');
@@ -49,24 +48,36 @@ closeBtn.addEventListener('click', () => {
 
 
 
-
-const paymentBuyBtn = document.getElementById("buyButton");
+const paymentBuyBtn = document.querySelectorAll(".product-cart");
 const paymentCloseBtn = document.getElementById("paymentCloseButton");
-const paymentMenu = document.getElementById("paymentHeader");
+const paymentPage = document.getElementById("paymentHeader");
 
 
-paymentBuyBtn.addEventListener('click', () => {
-    paymentMenu.style.display = 'flex';
-    paymentBuyBtn.style.display = 'none';
-    paymentCloseBtn.style.display = "block";
+paymentBuyBtn.forEach((item) => {
+    item.addEventListener('click', () => {
+        paymentPage.style.display = 'flex';
 
+    })
 });
-
-
 
 paymentCloseBtn.addEventListener('click', () => {
-    paymentMenu.style.display = 'none';
-    paymentCloseBtn.style.display = "none";
-    paymentBuyBtn.style.display = "block";
+    paymentPage.style.display ='none'
+}) 
 
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

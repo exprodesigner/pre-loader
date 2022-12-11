@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcHad</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.11/dist/flickity.min.css">
+    
+
+    
+    <link rel="icon" type="image/x-icon" href="./images/Echad Logo.png">
+    
+ 
+    
+    
+</head>
+
+
+
+<body>
+    <div id="pre-loader"></div>
+
+
+
+
+    <header id="paymentHeader">
+        <div class="paymentContainer">
+            
+            <div class="left">
+                <div class="paymentCloseButton" id="paymentCloseButton">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <h3>BILLING ADDRESS</h3>
+                <form>
+                    Full name
+                    <input type="text" name="" placeholder="Enter name">
+                    <br>Email
+                    <br><input type="text" name="" placeholder="Enter email">
+    
+                    <br>Address
+                    <br><input type="text" name="" placeholder="Enter address">
+                    
+                    <br>City
+                    <br> <input type="text" name="" placeholder="Enter City">
+                    <br><div id="paymentZip">
+                        <label>
+                            State
+                            <select>
+                                <option>Choose State..</option>
+                                <option>State-1</option>
+                                <option>State-2</option>
+                                <option>State-3</option>
+                                <option>State-4</option>
+                            </select>
+                        </label>
+                            <label>
+                            Zip code
+                            <input type="number" name="" placeholder="Zip code">
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                
+                    <h3>PAYMENT</h3>
+                    
+                
+                <form>
+                Accepted Card <br>
+                    <img src="./images/Payment.png" width="140">
+                    
+                    <br><br>
+                    <div class="paymentInfo"><label>
+                        Payment
+                        <select>
+                            <option>PayPal</option>
+                            <option>WiPay</option>
+                            <option>PayWise</option>
+                            <option>Other</option>
+                        </select>
+                    </label>
+                    </div>
+                
+                    <br> Card number
+                <input type="text" name="" placeholder="Enter card number">
+                    
+                <br>Exp month
+                    <input type="text" name="" placeholder="Enter Month">
+                    <div id="paymentZip">
+                        <label>
+                            Exp year
+                            <select>
+                                <option>Choose Year..</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </label>
+                            <label>
+                            CVV
+                            <input type="number" name="" placeholder="CVV">
+                        </label>
+                    </div>
+                </form>
+                <input type="submit" name="" value="CHECKOUT">
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <section id="navBar">
+        <div class="container">
+            <div class="navTop">
+                <ul>
+                    <a href="index.html">
+                        <h2>EcHaD Wellness Center</h2>
+                    </a>
+                </ul>
+                <span>Offer end Soon! Get it for Yourself Now!</span>
+                <div class="search">
+                    <input type="text" placeholder="Search" class="searchInput">
+                    <i class="tpsearchicon fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="mobileMenuButton" id="mobileMenuButton" >
+                    <i class="fa-solid fa-bars"></i>
+                </div>     
+            </div>
+            <div class="navBottom">
+                <ul id="mobileNavBar">
+                    <div class="btmsearch">
+                        <input type="text" placeholder="Search" class="btmsearchInput">
+                        <i class="btmsearchicon fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                    <li><a href="./shop.html">SHOP</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./testimonial.html">REVIEW</a></li>
+                    <li><a href="./offer.html" class="active">SPECIAL OFFER</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    
+                    <div class="closeButton" id="closeButton">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="sproduct">
+        <div class="container">
+            <div class="sproduct" id="chlorellasprirulina">
+                <div class="image">
+                    <img src="./images/Chilorella&Spirulina.jpg" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Chlorella & Spirulina</h2>
+                    <h1>$ 99 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top Benefits of Chlorella & Spirulina:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Makes You Feel Young.
+                        
+                        <br>2) Supports Healthy Pregnancy.
+                        
+                        <br>3) Aids Digestion.
+                        <br>4) Relieves Constipation.
+                        <br>5) Improves Eyesight.
+                        <br>6) Spirulina Is Extremely High in Many Nutrients.
+                        <br>7) Powerful Antioxidant and Anti-Inflammatory Properties.
+                        <br>8) May Reduce Blood Pressure.
+                        <br>9) Lower “Bad” LDL and Triglyceride Levels
+                        <br>10) Cleaner Fresher Breath
+                        
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        Spirulina also known as arthrospira is an edible cyanobacteria or blue-green algae which is derived from one of two species – Spirulina platensis and Spirulina maxima. It has a number of proven health benefits ranging from cancer protection to heart health and weight loss.
+
+                        <br>Chlorella is one of the highest plant sources of chlorophyll, which has incredible health benefits in the body.    
+                    
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="eveningprimrose">
+                <div class="image">
+                    <img src="./images/EveningPrimroseWhiteBg.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Evening Primrose Oil;</h2>
+                    <h1>$ 85 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Evening Primrose Oil;</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Relieve Hot Flashes / PMS
+                        
+                        <br>2) Reduce Acne
+                        
+                        <br>3) Rheumatoid Arthritis Relief
+                        <br>4) Heart Health
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+
+                        2011 review of studies from Australia concluded that GLA found in evening primrose, borage seed, or blackcurrant seed oil provided moderate relief of pain and disability in people with rheumatoid arthritis.
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="goldcoremultivitamin">
+                <div class="image">
+                    <img src="./images/GoldcoreMultivitamin.jpg" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>GoldCore Multivitamin (Non Vegan)</h2>
+                    <h1>$ 85 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Ingredients:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        Vitamin A 4%
+
+<br>Vitamin C 33%
+
+<br>Vitamin D3 56%
+
+<br>Vitamin E 98%
+
+<br>Thiamine 208%
+
+<br>Riboflavin 192%
+
+<br>Niacin 63%
+
+<br>Vitamin B6 147%
+
+<br>Folic Acid 667 166%
+
+<br>Vitamin B12 417%
+
+<br>Pantothenic Acid 88%
+
+<br>Calcium 1.8%
+
+<br>Iron 14%
+
+<br>Magnesium 6%
+
+<br>Docosahexanoic Acid N/A
+
+
+
+<br>Other Ingredients: Soy Oil, Glycerol, Beeswax, Lecithin, Caramel , Water.
+
+<br>Free of: Added Sugar, Dairy , Yeast,
+
+<br>Allergens: Contains, Fish, Soy.
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        
+                        Our Multivitamin blend contains fish oil and is not suitable for vegans.
+
+                        <br>This blend contains essential vitamins and minerals for overall Health and Wellness.1 review of studies from Australia concluded that GLA found in evening primrose, borage seed, or blackcurrant seed oil provided moderate relief of pain and disability in people with rheumatoid arthritis.
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="greencoffeebean">
+                <div class="image">
+                    <img src="./images/GreenCoffeeBean.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Green Coffee Bean Extract</h2>
+                    <h1>$ 149 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Green Coffee Bean Extract:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Promote Weight Loss
+
+   <br> 2) May Help control blood sugar levels
+
+   <br> 3) Reduce Blood Pressure
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        In a 2017 study on females with obesity, taking 400 mg of green coffee bean extract for 8 weeks, along with an energy-restricted diet, resulted in more weight loss than following an energy-restricted diet alone.
+
+                        <br>Those who took the extract also had reduced total cholesterol, LDL (bad) cholesterol, and free fatty acids. The researchers found that this intervention affected the break down of fat in the body, which may help people control their weight.
+                        
+                        <br>   Research from 2020 agrees that green coffee bean extract may improve biomarkers, including the following:
+                        
+                        <br> reduced total cholesterol
+                        <br>  reduced LDL cholesterol levels, although, it also decreased HDL (good) cholesterol
+                        <br>  a modest, nonsignificant effect on triglycerides levels
+                    
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="lionsmaneextract">
+                <div class="image">
+                    <img src="./images/Lion'sManeMockupWhite.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Lions Mane Mushroom</h2>
+                    <h1>$ 159 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Lions Mane Extract</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Boost Immune System
+
+   <br> 2) Aid mild to moderate symptoms of Depression/ Anxiety
+
+   <br> 3) Protects against ulcers in the digestive track
+   <br>4) Protects against Dementia
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Studies have found that lion’s mane mushrooms contain two special compounds that can stimulate the growth of brain cells: hericenones and erinacines.
+
+
+
+                        <br>Additionally, animal studies have found that lion’s mane may help protect against Alzheimer’s disease, a degenerative brain disease that causes progressive memory loss.
+
+
+
+                        <br>In fact, lion’s mane mushroom and its extracts have been shown to reduce symptoms of memory loss in mice, as well as prevent neuronal damage caused by amyloid-beta plaques, which accumulate in the brain during Alzheimer’s disease.
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="milkthistle">
+                <div class="image">
+                    <img src="./images/MilkThistleSeedExtract.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Milk Thistle Seed Extract</h2>
+                    <h1>$ 165 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Milk Thistle:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Boost Immune System
+
+   <br> 1) Supports Liver Health
+
+   <br> 2) Supports Bones and Joints
+   <br> 3) Reduces Cholesterol
+   <br> 4) Improves Skin Health
+   <br> 5)Reduces Insulin Resistance
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Milk thistle may help to stop the spread of certain types of cancer.
+
+                        <br>Small studies mainly performed on cells in laboratories have found that milk thistle can slow cancer cell and tumor growth and possibly increase the effectiveness of chemotherapy, according to the National Institutes of Health (NIH)Trusted Source. Researchers have found benefits for several types of cancer, including:
+
+                        <br>prostate cancer
+                        <br>breast cancer
+                        <br>cervical cancer
+                        <br>leukemia
+                        <br>skin cancer
+                        <br>colorectal cancer
+
+
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="msmmethy">
+                <div class="image">
+                    <img src="./images/MSM.jpg" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>MSM Methylsulfonylmethane</h2>
+                    <h1>$ 166 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top Benefits Of Methylsulfonylmethane:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Boost Immune System
+
+   <br> 1) Can Decrease Joint Pain.
+
+   <br> 2)Has Anti-Inflammatory Effects, Increases Glutathione Levels.
+   <br> 3)Speed Up Recovery After Exercise (Workouts).
+   <br> 4)Alleviate Arthritis Symptoms by Reducing Pain and Stiffness.
+   <br> 5)Relieve Allergy Symptoms.
+   <br> 6) Has Anti Cancer Effects on the Human Body.
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Methylsulfonylmethane, more commonly known as MSM, used as a dietary supplement can treat a wide array of symptoms and conditions.
+
+
+
+                        <br> MSM is a sulfur-containing compound found naturally in plants, animals and humans. Our MSM is derived and harvested from plants, making it a good option for our vegan community as well.
+                        
+                        
+                        
+                        <br> MSM is widely used as an alternative medicine by people looking for a natural way to relieve joint pain, reduce inflammation and boost immunity.
+                        
+                        
+                        
+                        <br> NOTE: MSM Safety and Side Effects
+                        
+                        <br> MSM is considered safe and is generally well tolerated with minimal side effects.
+                        
+                        
+                        
+                        <br>Major regulatory agencies such as the FDA have given it the Generally Recognized As Safe (GRAS) designation.
+
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="multivitaminforkids">
+                <div class="image">
+                    <img src="./images/KidsMultivitamin.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Multivitamins for Kids</h2>
+                    <h1>$ 100 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top Benefits of Multivitamins for kids :</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Promote Healthy Eyes.
+
+   <br> 2) Promote strong bones and teeth.
+
+   <br> 3) Promote healthy digestive system.
+   <br> 4) Promote Healthy Brain Development.
+   <br> 5) Encourage Healthy Bowel movements.
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                      <br>  Vitamins for Growing Kids
+
+                      <br>  Kids need to get the full complement of vitamins and minerals from foods each day because their bodies are growing. In particular, the following vitamins are especially important for supporting kids' growing bodies:
+                        
+                        
+                        
+                      <br>   Vitamin A. Vitamin A is a fat-soluble vitamin that supports healthy eyesight, normal growth and tissue repair. It’s found in a variety of vegetables and fruits, liver and dairy products.
+                        
+                      <br> B vitamins. The B vitamins fulfill many functions in the body, including helping with red blood cell development and supporting a healthy metabolism. These vitamins can be found in meat, fish, poultry, eggs and enriched foods such as grains and cereals.
+                        
+                      <br>  Vitamin C. Vitamin C supports a healthy immune system and skin and helps kids grow strong muscles. It’s found in a wide variety of fruits and vegetables including citrus fruits, broccoli, spinach and tomatoes.
+                        
+                      <br>  Vitamin D. Vitamin D is a very important vitamin for kids as it helps the body build and maintain strong teeth and bones. Many dairy products are fortified with it, and the skin makes vitamin D when exposed to sunlight. Vitamin D also helps the body absorb calcium from the diet.
+                        
+                      <br>  Calcium. Calcium is another really important mineral for kids because it helps them develop strong bones and teeth. Kids who don’t get enough may develop rickets, a growth disorder in the bones. Calcium can be found in dairy products, dark leafy greens, tofu and fortified juices.
+                        
+                      <br> Iron. Iron is an important nutrient for kids as it helps growing bodies and blood cell production. Iron can be found in beans, fish, turkey, beef and fortified cereals.
+                        
+                      <br> U.S News Health ( Source)
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+  
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="passionflowerextract">
+                <div class="image">
+                    <img src="./images/PassionFlowerExtract.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Passion Flower Extract</h2>
+                    <h1>$ 185 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Passion Flower Extract:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Sleep Aid ( Improve sleep quality)
+
+   <br> 2) Anxiety relief
+
+   <br> 3) Mood stabilizer
+   <br> 4) Natural Pain Relief
+   <br> 5) Relieve Head aches Naturally
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Extracts and fluid extracts from the aerial parts from Passiflora incarnata L. are widely used as components of herbal sedatives. Many pharmacological investigations confirm the sedative effects of Passiflorae herba. From some of the studies also anxiolytic effects can be deduced. As Passionflower is mainly used in combinations, clinical studies of the single drug are not available. Based on pharmacological data, the experiences of traditional use and the use in combinations Passiflora extracts are an important factor in the phytotherapy of tenseness, restlessness and irritability with difficulty in falling asleep.
+
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="sawpalmetto">
+                <div class="image">
+                    <img src="./images/Saw Palmetto.jpg" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Saw Palmetto</h2>
+                    <h1>$ 145 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top Five benifits of using Saw Palmetto:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Hair loss
+
+   <br> 2) Prostate care
+
+   <br> 3) Help regulate testosterone
+   <br> 4) Urinary Track infection
+   <br> 5) Decrease Inflammation
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Saw palmetto may improve urinary tract function, particularly for those with prostate issues.
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="seabuckthornoil">
+                <div class="image">
+                    <img src="./images/SeaBuchthornOil.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Sea Buckthorn Oil</h2>
+                    <h1>$ 245 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Sea Buckthorn Oil:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Reduce Cholesterol (LDL)
+
+   <br> 2) Act as a Blood thinning agent
+   <br> 3) Anti-inflammatory
+   <br> 4) Potent Anti-oxidant
+   <br> 5) Anti aging agent ( Wrinkles)
+   <br> 6) Promotes Heart Health( Irregular Heart beats, fatigue, Stresses)
+   
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Sea buckthorn oil is a thick, golden-orange liquid that comes from sea buckthorn berries. Many cosmetic companies use it in their products. It is also possible to apply the oil to a person’s skin or hair directly, or to take it orally in a capsule.
+
+
+
+<br>Sea buckthorn oil contains a number of compounds that can be beneficial to human health. These include:
+
+
+
+<br>Fatty acids, including gamma linolenic acid (omega-6) and palmitoleic acid (omega-7)
+
+<br>vitamins, including vitamin C, vitamin A, and vitamin E
+
+<br>antioxidants, such as flavonoids and polyphenols
+
+<br>According to a 2021 review of previous studies, sea buckthorn oil possesses several medicinal properties too. It is:
+
+
+
+<br>Antibacterial
+
+<br>Antifungal
+
+<br>Anti-inflammatory
+                        
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="staminaaddii">
+                <div class="image">
+                    <img src="./images/StaminaAddii.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Stamina Addii</h2>
+                    <h1>$ 345 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Stamina Addii:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                        1) Boost Testosterone Levels ( Encourage the uptake of more Testosterone from blood and tissue)
+
+   <br> 2) Increase Endurance and Recovery
+   <br> 3) Boost Sperm Health
+   <br> 4) Increase Blood Flow to the Penis ( Relax Blood Vessels)
+   <br> 5) Add Girth by increasing blood flow
+   <br> 6) Boost Libido
+   <br> 7) Aid mild to moderate E.D
+   <br> 8) Suppress symptoms of HSV
+   
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                       Our Blend is specially formulated to be a clean boost to the above mentioned aspects of men's health.
+
+                       <br>There are no side effects, no headaches or feelings of a crash as the formula is being worked through.
+
+                       <br>Ingredients: (DV) Siberian Ginseng 25%
+
+                       <br>Yohimbe Extract 25%
+
+                       <br>Horny Goat Weed 25%
+
+                       <br>Longjack Extract 25%
+
+                       <br>Black Maca Root 30%
+
+                       <br>Black Ant Extract 25%
+
+                       <br>L-Citrulline 25%
+
+                       <br>Active Ingredient:
+
+                       <br>Capsicum Annuum 10%
+
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="staminaaddiiplus">
+                <div class="image">
+                    <img src="./images/StaminaAdilPlus.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Stamina Addii PLUS</h2>
+                    <h1>$ 400 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Stamina Addii PLUS:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+
+                        IMPROVED FORMULA!!!
+                       <br> 1) Boost Testosterone Levels ( Encourage the uptake of more Testosterone from blood and tissue)
+
+   <br>2) Increase Endurance and Recovery
+   <br> 3) Boost Sperm Health
+   <br> 4) Increase Blood Flow to the Penis ( Relax Blood Vessels)
+   <br> 5) Add Girth by increasing blood flow
+   <br> 6) Boost Libido
+   <br> 7) Aid mild to moderate E.D
+   <br> 8) Suppress symptoms of HSV
+   <br> 9) Stronger Longer Erections
+   
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                          Our Blend is specially formulated to be a clean boost to the above mentioned aspects of men's health.
+
+                        <br>  There are no side effects, no headaches or feelings of a crash as the formula is being worked through.
+                        
+                        
+                        
+                        <br>   Ingredients:
+                        
+                        <br>  Siberian Ginseng 50%
+                        
+                        <br>   Yohimbe Extract 25%
+                        
+                        <br>   Horny Goat Weed 35%
+                        
+                        <br>  Longjack Extract 25%
+                        
+                        <br>  Black Maca Root 30%
+                        
+                        <br>  Muira Puama 30%
+                        
+                        <br>  Black Ant Extract 25%
+                        
+                        <br>  L-Citrulline 50%
+                        
+                        
+                        
+                        <br>   Active Ingredient:
+                        
+                        <br>   Capsicum Annuum 20%
+                        
+                        
+                        
+                        <br>  We didn't reinvent the wheel, we simply made one stronger.
+
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="vitamink2">
+                <div class="image">
+                    <img src="./images/VitaminK2.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Vitamin k2 + d3</h2>
+                    <h1>$ 165 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Vitamin k2 + D3:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+    1) Strong Bones
+
+   <br>2) Anti- Cancer
+   <br> 3) Brain Health
+   <br> 4) Heart Health
+
+   
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Found in animal products, vitamin D3 is known to have these benefits:
+
+                       <br> Supports strong bones
+                        
+                       <br>  Promotes a healthy immune system
+                        
+                       <br>  Prevents gastrointestinal disease
+                        
+                       <br>   Improves cardiovascular health
+                        
+                       <br> Boosts brain health
+                        
+                       <br>   Improves mood
+                        
+                       <br>   May prevent cancer
+                        
+                        
+                        
+                       <br> Vitamin K2 is a fat-soluble vitamin that comes with its own health benefits:
+                        
+                       <br>  Heart health
+                       <br>   Healthy bones
+                       <br>   Strong teeth
+                       <br>  Cognitive function
+                       <br> Neonatal health
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="wheyprotein">
+                <div class="image">
+                    <img src="./images/WheyProteinSingle.jpg" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Whey Protein</h2>
+                    <h1>$ 185 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top Benefits Of Whey Protein:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+
+                        1) Build Muscle and Mass.
+
+   <br>2) Heal wounds Faster.
+   <br> 3) Weight Gain and Nutritional Boost.
+  
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Research on the use of whey protein shows:
+
+<br> Exercise training, evidence suggests that taking whey protein as part of a strength training program increases muscle mass and strength.
+<br>Whey protein helps with weight gain in people who have trouble gaining and keeping on weight.
+<br>Whey protein has been shown to benefit people recovering from burns and those with chronic wounds.
+<br>Hydrolyzed formula contains protein that's been broken down into smaller sizes. Research shows that infants given a hydrolyzed form of whey protein have a lower risk of developing atopic dermatitis (eczema) than do infants who consume standard formula. Giving an infant formula containing whey hydrolysate appears to reduce the risk of allergic reactions.
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="productSlideShow">
+        <h1>Choose a Product from this Slider</h1>
+        <div class="carousel-wrapper">
+            <div class="carousel"  data-flickity>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/WheyProteinSingle.jpg" alt="">
+                            <div class="proDes">
+                                <span>Protein</span>
+                                <h4>Whey Protein</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$185</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/VitaminK2.png" alt="">
+                            <div class="proDes">
+                                <span>Vitamin</span>
+                                <h4>Vitamin K2+D3 100mg</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$165</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/StaminaAdilPlus.png" alt="">
+                            <div class="proDes">
+                                <span>Organic</span>
+                                <h4>Stamina Addii PLUS</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$400</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/SeaBuchthornOil.png" alt="">
+                            <div class="proDes">
+                                <span>Organic</span>
+                                <h4>Sea Buckthorn Oil</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$245</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/KidsMultivitamin.png" alt="">
+                            <div class="proDes">
+                                <span>Multivitamin</span>
+                                <h4>Multivitamins for Kids</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$100</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+       
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <section id="newsLetter">
+        <div class="container">
+            <div class="newstext">
+                <h4>New here? Get 10% Off !!!</h4>
+                <p>We are offering upto 10% discount to our new customer. This is our  <span> Special Offer.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Put Your Email Address Here.">
+                <button class="signup">Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="footer">
+        <div class="container">
+        <div class="section">
+            <div class="f1">
+                <h3>EcHad Wellness Centre</h3>
+                <a href="https://www.facebook.com/EcHaD.sales/"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <br><a href="www.instagram.com/@echad_wellness_centre"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <br><a href=""><i class="fa-solid fa-envelope"></i> echad.sales@gmail.com</a>
+                <br><a href=""><i class="fa-solid fa-phone"></i> 1-868-473-0029</a>
+                <br><a href=""><i class="fa-brands fa-square-whatsapp"></i> 1-868-473-0029
+                    1-868-397-7979</a>
+            </div>
+    
+            <div class="f2">
+                <h3>Payment Options</h3>
+                    <li><a href="page-1.html">PayPal</a></li>
+                    <li><a href="page-2.html">WiPay</a></li>
+                    <li><a href="page-3.html">PayWise</a></li>
+                    <img class="payment" src="./images/Payment.png" alt="" width="160px" border-radius="20px">
+              </div>
+    
+            <div class="f3">
+                <h3>Important Links</h3>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help & Feedback</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                
+            </div>
+            </div>
+        </div>
+    
+    
+    
+    
+        <div id="copyright">
+                <div class="cpSection">
+                    <div class="copyright">
+                        <p>All rights reserved. ©2022. www.echadwellness.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+<script src="https://unpkg.com/flickity@2.0.11/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script src="main.js"></script>
+
+
+
+</body>
+
+</html>

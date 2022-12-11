@@ -237,6 +237,14 @@ input[type="submit"]:hover{
 
 
 
+#sproduct img {
+  width: 40vw;
+  height: auto;
+  border: 2px solid #89cff0;
+  border-radius: 10px;
+  margin: 0 40px;
+  min-width: 200px;
+}
 
 
 
@@ -612,7 +620,7 @@ margin-right: auto;
 }
 
 .productBox span {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: var(--white);
   background-color: var(--babyBlue);
@@ -623,6 +631,9 @@ margin-right: auto;
 .productBox h4 {
   margin: 0;
   color: black;
+  margin-top: 4px;
+  margin-bottom: 2px;
+
 }
 .product-star {
   color: var(--starYellow);
@@ -1477,3 +1488,53 @@ ul {
 }
 
  }
+
+
+ #sproduct .sproduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+
+
+  
+
+#sproduct img {
+  width: 40vw;
+  height: auto;
+  border: 2px solid #89cff0;
+  border-radius: 10px;
+  margin: 0 40px;
+  min-width: 200px;
+}
+
+#sproduct h2 {
+  color: rgb(0, 150, 37);
+}
+#sproduct button {
+padding: 20px;
+margin-bottom: 30px;
+border-radius: 5px;
+}
+#sproduct input {
+width: 40px;
+height: 100%;
+}
+
+#sproduct input:focus {
+outline: none;
+}
+
+#sproduct .quantity {
+display: flex;
+gap: 20px;
+}
+#sproduct input {
+width: 40px;
+height: 50px;
+font-size: 18px;
+}
+

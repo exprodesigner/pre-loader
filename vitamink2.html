@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcHad</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.11/dist/flickity.min.css">
+    
+
+    
+    <link rel="icon" type="image/x-icon" href="./images/Echad Logo.png">
+    
+ 
+    
+    
+</head>
+
+
+
+<body>
+    <div id="pre-loader"></div>
+
+
+
+
+    <header id="paymentHeader">
+        <div class="paymentContainer">
+            
+            <div class="left">
+                <div class="paymentCloseButton" id="paymentCloseButton">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <h3>BILLING ADDRESS</h3>
+                <form>
+                    Full name
+                    <input type="text" name="" placeholder="Enter name">
+                    <br>Email
+                    <br><input type="text" name="" placeholder="Enter email">
+    
+                    <br>Address
+                    <br><input type="text" name="" placeholder="Enter address">
+                    
+                    <br>City
+                    <br> <input type="text" name="" placeholder="Enter City">
+                    <br><div id="paymentZip">
+                        <label>
+                            State
+                            <select>
+                                <option>Choose State..</option>
+                                <option>State-1</option>
+                                <option>State-2</option>
+                                <option>State-3</option>
+                                <option>State-4</option>
+                            </select>
+                        </label>
+                            <label>
+                            Zip code
+                            <input type="number" name="" placeholder="Zip code">
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                
+                    <h3>PAYMENT</h3>
+                    
+                
+                <form>
+                Accepted Card <br>
+                    <img src="./images/Payment.png" width="140">
+                    
+                    <br><br>
+                    <div class="paymentInfo"><label>
+                        Payment
+                        <select>
+                            <option>PayPal</option>
+                            <option>WiPay</option>
+                            <option>PayWise</option>
+                            <option>Other</option>
+                        </select>
+                    </label>
+                    </div>
+                
+                    <br> Card number
+                <input type="text" name="" placeholder="Enter card number">
+                    
+                <br>Exp month
+                    <input type="text" name="" placeholder="Enter Month">
+                    <div id="paymentZip">
+                        <label>
+                            Exp year
+                            <select>
+                                <option>Choose Year..</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </label>
+                            <label>
+                            CVV
+                            <input type="number" name="" placeholder="CVV">
+                        </label>
+                    </div>
+                </form>
+                <input type="submit" name="" value="CHECKOUT">
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <section id="navBar">
+        <div class="container">
+            <div class="navTop">
+                <ul>
+                    <a href="index.html">
+                        <h2>EcHaD Wellness Center</h2>
+                    </a>
+                </ul>
+                <span>Offer end Soon! Get it for Yourself Now!</span>
+                <div class="search">
+                    <input type="text" placeholder="Search" class="searchInput">
+                    <i class="tpsearchicon fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="mobileMenuButton" id="mobileMenuButton" >
+                    <i class="fa-solid fa-bars"></i>
+                </div>     
+            </div>
+            <div class="navBottom">
+                <ul id="mobileNavBar">
+                    <div class="btmsearch">
+                        <input type="text" placeholder="Search" class="btmsearchInput">
+                        <i class="btmsearchicon fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                    <li><a href="./shop.html">SHOP</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./testimonial.html">REVIEW</a></li>
+                    <li><a href="./offer.html" class="active">SPECIAL OFFER</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    
+                    <div class="closeButton" id="closeButton">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+    
+
+    
+  
+
+   
+
+
+    
+
+
+    
+ 
+
+  
+   
+
+
+  
+
+   
+
+    <section id="sproduct">
+        <div class="container">
+            <div class="sproduct" id="vitamink2">
+                <div class="image">
+                    <img src="./images/VitaminK2.png" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Vitamin k2 + d3</h2>
+                    <h1>$ 165 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top benefits of Vitamin k2 + D3:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+    1) Strong Bones
+
+   <br>2) Anti- Cancer
+   <br> 3) Brain Health
+   <br> 4) Heart Health
+
+   
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Found in animal products, vitamin D3 is known to have these benefits:
+
+                       <br> Supports strong bones
+                        
+                       <br>  Promotes a healthy immune system
+                        
+                       <br>  Prevents gastrointestinal disease
+                        
+                       <br>   Improves cardiovascular health
+                        
+                       <br> Boosts brain health
+                        
+                       <br>   Improves mood
+                        
+                       <br>   May prevent cancer
+                        
+                        
+                        
+                       <br> Vitamin K2 is a fat-soluble vitamin that comes with its own health benefits:
+                        
+                       <br>  Heart health
+                       <br>   Healthy bones
+                       <br>   Strong teeth
+                       <br>  Cognitive function
+                       <br> Neonatal health
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sproduct" style="display:none;">
+        <div class="container">
+            <div class="sproduct" id="wheyprotein">
+                <div class="image">
+                    <img src="./images/WheyProteinSingle.jpg" alt="" width="100%">
+                </div>
+                <div class="details">
+                    <h2>Whey Protein</h2>
+                    <h1>$ 185 TTD</h1>
+                    <div class="quantity"><input type="number" value="01">
+                        <button>BUY NOW</button>
+                    </div>
+                    
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Top Benefits Of Whey Protein:</p>
+                    <p style="margin-top: 0; margin-bottom: 0;">
+
+                        1) Build Muscle and Mass.
+
+   <br>2) Heal wounds Faster.
+   <br> 3) Weight Gain and Nutritional Boost.
+  
+                        
+                    </p>
+                    <p style="font-weight:bold; margin-top: 0; margin-bottom: 0;">Summary:
+                    <p style="margin-top: 0; margin-bottom: 0;">
+                       
+                        Research on the use of whey protein shows:
+
+<br> Exercise training, evidence suggests that taking whey protein as part of a strength training program increases muscle mass and strength.
+<br>Whey protein helps with weight gain in people who have trouble gaining and keeping on weight.
+<br>Whey protein has been shown to benefit people recovering from burns and those with chronic wounds.
+<br>Hydrolyzed formula contains protein that's been broken down into smaller sizes. Research shows that infants given a hydrolyzed form of whey protein have a lower risk of developing atopic dermatitis (eczema) than do infants who consume standard formula. Giving an infant formula containing whey hydrolysate appears to reduce the risk of allergic reactions.
+
+
+                    </p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="productSlideShow">
+        <h1>Choose a Product from this Slider</h1>
+        <div class="carousel-wrapper">
+            <div class="carousel"  data-flickity>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/WheyProteinSingle.jpg" alt="">
+                            <div class="proDes">
+                                <span>Protein</span>
+                                <h4>Whey Protein</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$185</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/VitaminK2.png" alt="">
+                            <div class="proDes">
+                                <span>Vitamin</span>
+                                <h4>Vitamin K2+D3 100mg</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$165</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/StaminaAdilPlus.png" alt="">
+                            <div class="proDes">
+                                <span>Organic</span>
+                                <h4>Stamina Addii PLUS</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$400</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/SeaBuchthornOil.png" alt="">
+                            <div class="proDes">
+                                <span>Organic</span>
+                                <h4>Sea Buckthorn Oil</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$245</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="productBox">
+                        <a href="#">
+                            <img src="./images/KidsMultivitamin.png" alt="">
+                            <div class="proDes">
+                                <span>Multivitamin</span>
+                                <h4>Multivitamins for Kids</h4>
+                                <div class="product-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <h4>$100</h4>
+                                </div>
+                            </div>
+                            <div class="product-cart">
+                                <i class="fa-solid fa-cart-shopping cartIcon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+       
+
+    </section>
+
+    
+    <section id="newsLetter">
+        <div class="container">
+            <div class="newstext">
+                <h4>New here? Get 10% Off !!!</h4>
+                <p>We are offering upto 10% discount to our new customer. This is our  <span> Special Offer.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Put Your Email Address Here.">
+                <button class="signup">Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="footer">
+        <div class="container">
+        <div class="section">
+            <div class="f1">
+                <h3>EcHad Wellness Centre</h3>
+                <a href="https://www.facebook.com/EcHaD.sales/"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <br><a href="www.instagram.com/@echad_wellness_centre"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <br><a href=""><i class="fa-solid fa-envelope"></i> echad.sales@gmail.com</a>
+                <br><a href=""><i class="fa-solid fa-phone"></i> 1-868-473-0029</a>
+                <br><a href=""><i class="fa-brands fa-square-whatsapp"></i> 1-868-473-0029
+                    1-868-397-7979</a>
+            </div>
+    
+            <div class="f2">
+                <h3>Payment Options</h3>
+                    <li><a href="page-1.html">PayPal</a></li>
+                    <li><a href="page-2.html">WiPay</a></li>
+                    <li><a href="page-3.html">PayWise</a></li>
+                    <img class="payment" src="./images/Payment.png" alt="" width="160px" border-radius="20px">
+              </div>
+    
+            <div class="f3">
+                <h3>Important Links</h3>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help & Feedback</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                
+            </div>
+            </div>
+        </div>
+    
+    
+    
+    
+        <div id="copyright">
+                <div class="cpSection">
+                    <div class="copyright">
+                        <p>All rights reserved. ©2022. www.echadwellness.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+<script src="https://unpkg.com/flickity@2.0.11/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script src="main.js"></script>
+
+
+
+</body>
+
+</html>
